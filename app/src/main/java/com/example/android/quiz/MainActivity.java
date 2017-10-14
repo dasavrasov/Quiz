@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
             intent.putExtra("quizName",quizes.get(position).getFile());
             intent.putExtra("quizLang",quizes.get(position).getLang());
+            intent.putExtra("quizTitle",quizes.get(position).getName());
             startActivity(intent);
 
         }

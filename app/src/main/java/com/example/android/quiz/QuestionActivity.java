@@ -2,10 +2,13 @@ package com.example.android.quiz;
 
 import android.app.Application;
 import android.content.res.Configuration;
+import android.support.v4.app.NavUtils;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -23,9 +26,11 @@ public class QuestionActivity extends AppCompatActivity {
     private static final String INDEX_KEY="Index";
     private static final String LIST_KEY="QuestionList";
     private static final String QUIZ_NAME="quizName";
+    private static final String QUIZ_TITLE="quizTitle";
     private static final String QUIZ_LANG="quizLang";
 
     private String quizName;
+    private String quizTitle;
     private String quizLang;
     private static final String TAG = "MyActivity";
     private int index = 0;
@@ -59,14 +64,33 @@ public class QuestionActivity extends AppCompatActivity {
         isFinished=savedInstanceState.getBoolean("Finished");
     }
 
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch (item.getItemId()) {
+//            // Respond to the action bar's Up/Home button
+//            case android.R.id.home:
+//                NavUtils.navigateUpFromSameTask(this);
+//                return true;
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_question);
+        //add Up button to Action bar
+        ActionBar actionBar =getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
 
         //get quizName parameter from MainActivity
         Bundle b = getIntent().getExtras();
         quizName= b.getString(QUIZ_NAME);
+        quizTitle= b.getString(QUIZ_TITLE);
         quizLang= b.getString(QUIZ_LANG);
+
+        actionBar.setTitle(quizTitle);
 
         //get Locale depends on quiz
         Locale locale = new Locale(quizLang);
@@ -76,7 +100,6 @@ public class QuestionActivity extends AppCompatActivity {
         getBaseContext().getResources().updateConfiguration(config,
                 getBaseContext().getResources().getDisplayMetrics());
 
-        setContentView(R.layout.activity_question);
 
         btnNext = (Button) findViewById(R.id.btnNext);
         btnPrev = (Button) findViewById(R.id.btnPrev);
@@ -108,6 +131,7 @@ public class QuestionActivity extends AppCompatActivity {
 //        }
 //        ShowQuestion(questions_arr.get(index), questionLayout);
             UpdateQuestion(index);
+
     }
 
     /*
