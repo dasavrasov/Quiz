@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--color name="colorPrimary">#3F51B5</color -->
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!-- color name="colorPrimaryDark">#00BCD4</color -->
+    <color name="colorAccent">#FF4081</color>
+    <color name="correctAnswer">#00C853</color>
+    <color name="wrongAnswer">#D50000</color>
+    <color name="buttonTint">#006064</color>
+    <color name="backgroundTint">#FFCDD2</color>
+    <color name="background">#FFF8E1</color>
+
+</resources>

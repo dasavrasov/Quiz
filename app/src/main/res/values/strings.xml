@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Quiz List</string>
+    <string name="Next">Next</string>
+    <string name="Prev">Prev</string>
+    <string name="Finish">Finish</string>
+    <string name="question">Question</string>
+    <string name="explanation">Explanation</string>
+    <string name="correct">Correct</string>
+    <string name="wrong">Wrong</string>
+</resources>

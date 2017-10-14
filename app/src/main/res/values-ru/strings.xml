@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quiz List</string>
+    <string name="Next">След</string>
+    <string name="Prev">Пред</string>
+    <string name="Finish">Конец</string>
+    <string name="question">Вопрос</string>
+    <string name="explanation">Ответ</string>
+    <string name="correct">Верно</string>
+    <string name="wrong">Неверно</string>
+</resources>

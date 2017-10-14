@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<questions>
+    <question
+        text="I am a good developer"
+        type="RadioGroup">
+
+        <answer>
+            <item id="1" text="Yes" correct="false"> </item>
+            <item id="2" text="No" correct="false"> </item>
+            <item id="3" text="Sometimes" correct="false"></item>
+        </answer>
+    </question>
+
+    <question
+        text="Select two farm animals"
+        type="CheckBox">
+
+        <answer>
+            <item id="1" text="Cow" correct="true"> </item>
+            <item id="2" text="Tiger" correct="false"> </item>
+            <item id="3" text="Hen" correct="true"></item>
+        </answer>
+    </question>
+</questions>

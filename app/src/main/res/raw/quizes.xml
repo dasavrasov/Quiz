@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quizes>
+    <quiz id="1" file="Numbers" name="English Numbers" lang="en"/>
+    <quiz id="2" file="Moscow" name="Достопримечательности Москвы" lang="ru"/>
+    <quiz id="3" file="English" name="Simple Test" lang="en"/>
+    <quiz id="4" file="Quiz4" name="Quiz 4"/>
+    <quiz id="5" file="Quiz5" name="Quiz 5"/>
+</quizes>

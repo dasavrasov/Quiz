@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<questions>
+    <question
+        text="How many hours in a day"
+        type="RadioGroup"
+        explanation="">
+
+        <answer>
+            <item id="1" text="12" correct="false"> </item>
+            <item id="2" text="24" correct="true"> </item>
+            <item id="3" text="36" correct="false"></item>
+        </answer>
+    </question>
+
+    <question
+        text="Select two farm animals"
+        type="CheckBox"
+        explanation="Tiger is a wild animal">
+        <answer>
+            <item id="4" text="Cow" correct="true"> </item>
+            <item id="5" text="Tiger" correct="false"> </item>
+            <item id="6" text="Hen" correct="true"></item>
+        </answer>
+    </question>
+    <question
+        text="Select max value"
+        type="RadioGroup"
+        explanation="100-1=90, 10+10=20, 5+25=30">
+
+        <answer>
+            <item id="7" text="10+10" correct="false"> </item>
+            <item id="8" text="5+25" correct="false"> </item>
+            <item id="9" text="100-1" correct="true"></item>
+        </answer>
+    </question>
+    <question
+        text="Select hot colors"
+        type="CheckBox"
+        explanation="Blue, green and purple are cold">
+
+        <answer>
+            <item id="10" text="red" correct="true"> </item>
+            <item id="11" text="green" correct="false"> </item>
+            <item id="12" text="blue" correct="false"></item>
+            <item id="13" text="orange" correct="true"></item>
+            <item id="14" text="yellow" correct="true"></item>
+            <item id="15" text="purple" correct="false"></item>
+        </answer>
+    </question>
+
+</questions>
