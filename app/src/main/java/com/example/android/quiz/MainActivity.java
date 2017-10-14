@@ -13,6 +13,12 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    static final String INDEX_KEY="Index";
+    static final String LIST_KEY="QuestionList";
+    static final String QUIZ_NAME="quizName";
+    static final String QUIZ_TITLE="quizTitle";
+    static final String QUIZ_LANG="quizLang";
+
     private ArrayAdapter<String> mAdapter;
     ArrayList<Quiz> quizes;
     ArrayList<String> quizNames;
@@ -62,9 +68,9 @@ public class MainActivity extends AppCompatActivity {
 //                    "Вы выбрали " + (position + 1) + " элемент", Toast.LENGTH_SHORT).show();
 //            QuestionActivity.quizName=quizes.get(position);
             Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
-            intent.putExtra("quizName",quizes.get(position).getFile());
-            intent.putExtra("quizLang",quizes.get(position).getLang());
-            intent.putExtra("quizTitle",quizes.get(position).getName());
+            intent.putExtra(QUIZ_NAME,quizes.get(position).getFile());
+            intent.putExtra(QUIZ_LANG,quizes.get(position).getLang());
+            intent.putExtra(QUIZ_TITLE,quizes.get(position).getName());
             startActivity(intent);
 
         }

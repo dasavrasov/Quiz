@@ -21,14 +21,9 @@ import android.widget.Toast;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Locale;
+import static com.example.android.quiz.MainActivity.*;
 
 public class QuestionActivity extends AppCompatActivity {
-    private static final String INDEX_KEY="Index";
-    private static final String LIST_KEY="QuestionList";
-    private static final String QUIZ_NAME="quizName";
-    private static final String QUIZ_TITLE="quizTitle";
-    private static final String QUIZ_LANG="quizLang";
-
     private String quizName;
     private String quizTitle;
     private String quizLang;
